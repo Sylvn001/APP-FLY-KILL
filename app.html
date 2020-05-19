@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="game.js"> </script>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+
+<body onresize="adjustScreen()">
+    <div class="panel">
+        <div class="lifes">
+            <img id="l1" src="imagens/coracao_cheio.png">
+            <img id="l2" src="imagens/coracao_cheio.png">
+            <img id="l3" src="imagens/coracao_cheio.png">
+            <img id="l4" src="imagens/coracao_cheio.png">
+            <img id="l5" src="imagens/coracao_cheio.png">
+        </div>
+        <div class="time">
+            Tempo Restante: <span id="stopwatch"> </span>
+        </div>
+    <div/>
+    
+
+    <script>
+
+    document.getElementById('stopwatch').innerHTML = time
+
+        randomPosition()
+        var createFly = setInterval(function(){
+             randomPosition()
+        }, createTimeFly)
+    </script>
+</body>
+</html>
